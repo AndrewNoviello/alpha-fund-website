@@ -1,12 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Contact from './components/Contact';
-import Recruitment from './components/Recruitment';
-import Alumni from './components/Alumni';
-import Team from './components/Team';
+import Recruitment from './pages/Recruitment';
+import Alumni from './pages/Alumni';
+import Team from './pages/Team';
+import TeamMemberPage from './pages/TeamMember';
+import Home from './pages/Home';
 
 const Layout = () => (
   <>
@@ -15,13 +14,6 @@ const Layout = () => (
   </>
 );
 
-const Home = () => (
-  <>
-    <Hero />
-    <About />
-    <Contact />
-  </>
-);
 
 const router = createBrowserRouter([
   {
@@ -31,6 +23,7 @@ const router = createBrowserRouter([
       { path: '/recruitment', element: <Recruitment /> },
       { path: '/alumni', element: <Alumni /> },
       { path: '/team', element: <Team /> },
+      { path: '/team/:id', element: <TeamMemberPage /> }
     ],
   },
 ]);
