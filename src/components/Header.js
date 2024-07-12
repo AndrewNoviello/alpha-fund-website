@@ -9,7 +9,9 @@ export default function Header() {
 
   return (
     <header>
-      <PageIllustration />
+      <div className="relative max-w-6xl mx-auto h-0 pointer-events-none" aria-hidden="true">
+        <PageIllustration />
+      </div>
       <nav className="border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-row justify-between items-center mx-auto max-w-screen-xl">
           <a href="https://flowbite.com" className="flex items-center">
