@@ -6,15 +6,14 @@ import Alumni from './pages/Alumni';
 import Team from './pages/Team';
 import TeamMemberPage from './pages/TeamMember';
 import Home from './pages/Home';
-import GradientView from './components/GradientView';
 import Footer from './components/Footer';
 
 const Layout = () => (
-  <>
+  <div className="overflow-x-hidden">
     <Header />
     <Outlet />
     <Footer />
-  </>
+  </div>
 );
 
 
