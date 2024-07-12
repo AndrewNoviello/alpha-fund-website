@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" id="about">
       <section class="">
         <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img class="w-full" src="alphafund_team.png" alt="Alpha Fund Team" />
